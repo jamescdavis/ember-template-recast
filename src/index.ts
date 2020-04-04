@@ -3,7 +3,7 @@ import ParseResult from './parse-result';
 
 const PARSE_RESULT_FOR = new WeakMap();
 
-function parse(template: string) {
+export function parse(template: string) {
   let result = new ParseResult(template);
 
   PARSE_RESULT_FOR.set(result.ast, result);
@@ -11,12 +11,12 @@ function parse(template: string) {
   return result.ast;
 }
 
-function print(ast: any) {
+export function print(ast: any) {
   let parseResult = PARSE_RESULT_FOR.get(ast);
   return parseResult.print();
 }
 
-function transform(template: string, plugin: any) {
+export function transform(template: string, plugin: any) {
   let ast;
   if (typeof template === 'string') {
     ast = parse(template);
@@ -37,10 +37,4 @@ function transform(template: string, plugin: any) {
   return { ast, code: print(ast) };
 }
 
-module.exports = {
-  builders,
-  parse,
-  print,
-  transform,
-  traverse,
-};
+export { builders, traverse } from '@glimmer/syntax';
