@@ -216,7 +216,7 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@glimmer/env@0.1.7":
+"@glimmer/env@0.1.7", "@glimmer/env@^0.1.7":
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/@glimmer/env/-/env-0.1.7.tgz#fd2d2b55a9029c6b37a6c935e8c8871ae70dfa07"
   integrity sha1-/S0rVakCnGs3psk16MiHGucN+gc=
@@ -227,6 +227,23 @@
   integrity sha512-z62FdxACLmIiAaM9sx34kTVGnip4OaKcUHbrtRhKR54o3XdR/wyJ4iibIRqGR8xLPz2XbOoyarDQ1QmYJBU8Mg==
   dependencies:
     "@simple-dom/interface" "^1.4.0"
+
+"@glimmer/interfaces@^0.50.1":
+  version "0.50.1"
+  resolved "https://registry.yarnpkg.com/@glimmer/interfaces/-/interfaces-0.50.1.tgz#008620d9b42e296ce89669415e4830354b83c4fb"
+  integrity sha512-ye9fWev8QxK8Y8+NzCa0uJDArFURbVhAahSFyPT25UdalYCWEmJmqD7k1KezZk2N7ZPxLPaBjOk9ifzDPRGHgg==
+  dependencies:
+    "@simple-dom/interface" "^1.4.0"
+
+"@glimmer/reference@^0.50.1":
+  version "0.50.1"
+  resolved "https://registry.yarnpkg.com/@glimmer/reference/-/reference-0.50.1.tgz#8971f71d90ef109b55d1e047e6a6bcc16fe9433b"
+  integrity sha512-u0RIwdvDu3l9LlnQskhC9OBgHGTSp2E/sNsiZsiRrqWwhm7ElF6XVtckbyPh+XleSSo9I8iAIrB4fNvoGw6gHw==
+  dependencies:
+    "@glimmer/env" "^0.1.7"
+    "@glimmer/interfaces" "^0.50.1"
+    "@glimmer/util" "^0.50.1"
+    "@glimmer/validator" "^0.50.1"
 
 "@glimmer/syntax@^0.50.0":
   version "0.50.0"
@@ -246,6 +263,22 @@
     "@glimmer/env" "0.1.7"
     "@glimmer/interfaces" "^0.50.0"
     "@simple-dom/interface" "^1.4.0"
+
+"@glimmer/util@^0.50.1":
+  version "0.50.1"
+  resolved "https://registry.yarnpkg.com/@glimmer/util/-/util-0.50.1.tgz#9e85e005d2fd563f979c5fba99563bfe75edf2a9"
+  integrity sha512-LaoSboa+BXjunun8wwVEV+FOH5oHc8AckfsmyHsHltFTwIRpjb0w0AQzeHzHXHMVhfpYHB06xlFO9naSEztB1Q==
+  dependencies:
+    "@glimmer/env" "0.1.7"
+    "@glimmer/interfaces" "^0.50.1"
+    "@simple-dom/interface" "^1.4.0"
+
+"@glimmer/validator@^0.50.1":
+  version "0.50.1"
+  resolved "https://registry.yarnpkg.com/@glimmer/validator/-/validator-0.50.1.tgz#3dd7ce7c945caed25d9c6d465ab3697be15a8144"
+  integrity sha512-mFPm+8cgIFjNznSvEGRcJbveZQYW7E9eiKFtUQW2VJdzTUxoal9ds+irR8tzEkUDio/cubQ7BJhV40vLpebOSw==
+  dependencies:
+    "@glimmer/env" "^0.1.7"
 
 "@iarna/toml@2.2.3":
   version "2.2.3"
