@@ -39,7 +39,7 @@ export interface ASTPlugin {
 }
 
 export interface TransformResult {
-  ast: AST.Node;
+  ast: AST.Template;
   code: string;
 }
 
